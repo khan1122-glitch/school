@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Events - Afnan ktk School</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<style>
+    /* Reset & Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .navbar .container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar .logo {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+    .nav-links li {
+      margin-left: 20px;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      background: #48c6ef;
+      color: black;
+    }
+  </style></style>
+  <!-- Header / Navbar -->
+  <header>
+    
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Afnan ktk School</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="teachers.html">Teachers</a></li>
+        <li><a href="admission.html">Online Admission</a></li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title">Upcoming Events</h2>
+    <div class="grid2">
+      <div class="card news-card">
+        <span class="badge">Event</span>
+        <h4>Science Fair 2025</h4>
+        <p>Explore the innovative projects from our talented students. Date: March 15, 2025.</p>
+      </div>
+      <div class="card news-card">
+        <span class="badge">Event</span>
+        <h4>Parent-Teacher Meeting</h4>
+        <p>Join us to discuss student progress. Date: April 5, 2025.</p>
+      </div>
+      <div class="card news-card">
+        <span class="badge">Event</span>
+        <h4>Annual Cultural Day</h4>
+        <p>Celebrate diversity with music, food, and performances. Date: May 10, 2025.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Afnan ktk School. All rights reserved.</p>
+  </footer>
+</body>
+</html>

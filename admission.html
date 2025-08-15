@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Admission - Afnan ktk School</title>
+  <style>
+    /* Reset & Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #6f86d6, #48c6ef);
+    }
+
+    /* Navbar */
+    .navbar {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .navbar .container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar .logo {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+    .nav-links li {
+      margin-left: 20px;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      background: #48c6ef;
+      color: black;
+    }
+
+    /* Form Centering */
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: calc(100vh - 80px);
+      padding: 20px;
+    }
+
+    /* Admission Card */
+    .admission-card {
+      background: white;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 700px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    .admission-card h2 {
+      text-align: center;
+      font-size: 2rem;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .admission-card p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    /* Form Styles */
+    label {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #333;
+      margin-top: 10px;
+      display: block;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 20px;
+      font-size: 1.2rem;
+      background: #48c6ef;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #3498db;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Skyline School</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="teachers.html">Teachers</a></li>
+        <li><a href="admission.html" class="active">Online Admission</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Center Form -->
+  <div class="center">
+    <div class="admission-card">
+      <h2>Online Admission Form</h2>
+      <p>Fill in the details below to apply for admission.</p>
+
+      <form action="https://formbold.com/s/3w2NW" method="POST">
+
+        <label>Full Name</label>
+        <input type="text" name="full_name" placeholder="Enter your full name" required>
+
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone" placeholder="Enter your phone number" required>
+
+        <label>Date of Birth</label>
+        <input type="date" name="dob" required>
+
+        <label>Gender</label>
+        <select name="gender" required>
+          <option value="">Select gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <label>Class Applying For</label>
+        <select name="class" required>
+          <option value="">Select class</option>
+          <option value="Nursery">Nursery</option>
+          <option value="KG">KG</option>
+          <option value="1">Grade 1</option>
+          <option value="2">Grade 2</option>
+          <option value="3">Grade 3</option>
+          <option value="4">Grade 4</option>
+          <option value="5">Grade 5</option>
+          <option value="6">Grade 6</option>
+          <option value="7">Grade 7</option>
+          <option value="8">Grade 8</option>
+          <option value="9">Grade 9</option>
+          <option value="10">Grade 10</option>
+        </select>
+
+        <label>Previous School (if any)</label>
+        <input type="text" name="previous_school" placeholder="Enter previous school name">
+
+        <label>Parent/Guardian Name</label>
+        <input type="text" name="parent_name" placeholder="Enter parent/guardian name" required>
+
+        <label>Parent/Guardian Contact</label>
+        <input type="tel" name="parent_contact" placeholder="Enter parent/guardian contact" required>
+
+        <label>Address</label>
+        <textarea name="address" placeholder="Enter your address" rows="3" required></textarea>
+
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

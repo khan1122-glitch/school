@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up - Afnan ktk School</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.auth-card {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+  width: 350px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.auth-card h2 {
+  font-size: 28px;
+  color: #4e54c8;
+  margin-bottom: 10px;
+}
+
+.auth-card p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.input:focus {
+  border-color: #4e54c8;
+  outline: none;
+  box-shadow: 0 0 5px rgba(78,84,200,0.3);
+}
+
+.btn {
+  width: 100%;
+  background: #4e54c8;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #3c41a9;
+}
+
+a {
+  color: #4e54c8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+</style>
+
+<body class="bg bg-orbs">
+  <div class="center">
+    <div class="card auth-card">
+      <h2>Sign Up</h2>
+      <input type="email" id="signupEmail" placeholder="Email" class="input">
+      <input type="password" id="signupPassword" placeholder="Password" class="input">
+      <button onclick="signup()" class="btn btn-lg">Sign Up</button>
+      <p>Already have an account? <a href="index.html">Login</a></p>
+    </div>
+  </div>
+  <script src="auth.js"></script>
+</body>
+</html>

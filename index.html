@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Afnan ktk School</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="bg bg-orbs"><style> 
+    /* Reset & Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .navbar .container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .navbar .logo {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+    }
+    .nav-links li {
+      margin-left: 20px;
+    }
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      background: #48c6ef;
+      color: black;
+    }
+  </style>
+
+  <!-- Header / Navbar -->
+  <header>
+    
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">Skyline School</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="teachers.html">Teachers</a></li>
+        <li><a href="admission.html">Online Admission</a></li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2 class="hero-title">Inspiring Young Minds, Shaping Bright Futures</h2>
+      <p class="hero-subtitle">At Afnan ktk School, we nurture curiosity, creativity, and character for a successful tomorrow.</p>
+      <div class="hero-actions">
+        <a href="#about" class="btn btn-lg">Learn More</a>
+        <a href="#contact" class="btn btn-lg btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-illus">
+      <div class="card stat"><h3>20+</h3><p>Qualified Teachers</p></div>
+      <div class="card stat"><h3>1000+</h3><p>Happy Students</p></div>
+      <div class="card stat"><h3>20+</h3><p>Years of Excellence</p></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <h2 class="section-title">About Us</h2>
+    <p class="about-text">Afnan ktk School has been committed to academic excellence and holistic development since its founding. We believe in fostering a supportive environment that empowers every student to reach their potential.</p>
+  </section>
+
+  <!-- Academics -->
+  <section class="section" id="academics">
+    <h2 class="section-title">Academics</h2>
+    <div class="grid3">
+      <div class="card feature"><h3>Primary</h3><p>Strong foundation in literacy, numeracy, and creativity.</p></div>
+      <div class="card feature"><h3>Secondary</h3><p>Advanced curriculum preparing students for higher education.</p></div>
+      <div class="card feature"><h3>Extra Curricular</h3><p>Sports, arts, and cultural programs for all-round growth.</p></div>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section class="section" id="events">
+    <h2 class="section-title">Upcoming Events</h2>
+    <div class="events-container">
+      <a href="events.html" class="event-box">
+        <span class="badge">Sports</span>
+        <h4>Annual Sports Day</h4>
+        <p>Join us for a day of fun, fitness, and friendly competition.</p>
+      </a>
+      <a href="events.html" class="event-box">
+        <span class="badge">Cultural</span>
+        <h4>Spring Cultural Fest</h4>
+        <p>Experience our students’ talents in art, music, and drama.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p>Email: info@Afnanktkschool.edu</p>
+    <p>Phone: +123 456 789</p>
+    <p>Address: 123 Learning Lane, Education City</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Afnan ktk School. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
